@@ -41,7 +41,7 @@
     "react-i18next": "11.17.4",
     "react-query": "3.39.1",
     "react-roadmap-milestones": "file:../react-roadmap-milestones",
-    "react-router-dom": "5.3.3",
+    "react-router-dom": "6.6.1",
     "react-scripts": "5.0.1",
     "styled-components": "5.3.5",
     "web-vitals": "2.1.4"
@@ -51,7 +51,6 @@
     "@types/node": "16.11.31",
     "@types/react": "18.0.14",
     "@types/react-dom": "18.0.5",
-    "@types/react-router-dom": "5.3.3",
     "@types/styled-components": "5.1.25",
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",

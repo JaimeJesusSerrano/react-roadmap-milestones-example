@@ -10,7 +10,7 @@ import { getById as getByIdRoadmapMilestone } from 'services/roadmap-milestone'
 
 import * as S from './styled'
 
-interface ParamTypes {
+type ParamTypes = {
   id: string
 }
 
