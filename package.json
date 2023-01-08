@@ -2,6 +2,10 @@
   "name": "react-roadmap-milestones-example",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Jaime Jesús Serrano",
+    "email": "jaimejesusserrano@gmail.com"
+  },
   "engines": {
     "node": ">= 16.0.0"
   },
