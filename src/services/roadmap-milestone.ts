@@ -1,4 +1,4 @@
-import { RoadmapMilestones } from 'react-roadmap-milestones'
+import { RoadmapMilestones } from '@jaimejesusserrano/react-roadmap-milestones'
 
 export const getById = (id: number): RoadmapMilestones => {
   console.log(`roadmap/${id}`)

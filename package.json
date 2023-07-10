@@ -27,6 +27,7 @@
   "dependencies": {
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
+    "@jaimejesusserrano/react-roadmap-milestones": "0.6.0",
     "@mui/material": "5.8.4",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.3.0",
@@ -36,7 +37,6 @@
     "react-dom": "18.2.0",
     "react-i18next": "11.17.4",
     "react-query": "3.39.1",
-    "react-roadmap-milestones": "file:../react-roadmap-milestones",
     "react-router-dom": "6.6.1",
     "react-scripts": "5.0.1",
     "styled-components": "5.3.5",
@@ -54,5 +54,17 @@
     "eslint-plugin-react": "7.30.1",
     "prettier": "2.7.1",
     "typescript": "4.7.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
