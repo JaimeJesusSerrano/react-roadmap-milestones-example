@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useTranslation } from 'react-i18next'
 import { useQuery } from 'react-query'
-import { ReactRoadmapMilestones } from 'react-roadmap-milestones'
+import { ReactRoadmapMilestones } from '@jaimejesusserrano/react-roadmap-milestones'
 import { useParams } from 'react-router-dom'
 
 import MainTemplate from 'components/templates/main'
@@ -10,7 +10,7 @@ import { getById as getByIdRoadmapMilestone } from 'services/roadmap-milestone'
 
 import * as S from './styled'
 
-interface ParamTypes {
+type ParamTypes = {
   id: string
 }
 
