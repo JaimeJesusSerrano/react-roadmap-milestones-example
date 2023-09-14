@@ -1,7 +1,5 @@
 # React Roadmap Milestones Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Description
 The React Roadmap Milestones component **Under construction** is a board with a lot of features, functionalities or whatever where a user can see all of them divided by categories and milestones.
 
