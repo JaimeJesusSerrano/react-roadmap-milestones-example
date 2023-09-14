@@ -15,6 +15,7 @@
   },
   "scripts": {
     "build": "react-scripts build",
+    "eject": "react-scripts eject",
     "start": "react-scripts start",
     "test": "react-scripts test --watchAll=false"
   },
@@ -27,7 +28,7 @@
   "dependencies": {
     "@emotion/react": "11.9.3",
     "@emotion/styled": "11.9.3",
-    "@jaimejesusserrano/react-roadmap-milestones": "0.6.3",
+    "@jaimejesusserrano/react-roadmap-milestones": "0.6.4",
     "@mui/material": "5.8.4",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "13.3.0",
