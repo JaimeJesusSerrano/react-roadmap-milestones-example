@@ -1,6 +1,6 @@
 {
   "name": "react-roadmap-milestones-example",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": false,
   "author": {
     "name": "Jaime Jesús Serrano",
@@ -20,7 +20,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@jaimejesusserrano/react-roadmap-milestones": "0.6.5",
+    "@jaimejesusserrano/react-roadmap-milestones": "0.6.6",
     "@types/node": "20.6.0",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
