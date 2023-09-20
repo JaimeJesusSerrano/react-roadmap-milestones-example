@@ -1,6 +1,6 @@
 import type { RoadmapMilestones } from '@jaimejesusserrano/react-roadmap-milestones'
 
-export const getById = (id: number): RoadmapMilestones => {
+export const getExample = (): RoadmapMilestones => {
   const roadmapMilestone: RoadmapMilestones = {
     name: 'Roadmap Milestone',
     startDate: new Date('2021-03-13'),
@@ -621,6 +621,32 @@ export const getById = (id: number): RoadmapMilestones => {
             status: 'Pending',
             tags: [],
             updateDate: new Date('2023-01-09'),
+          },
+          {
+            category: {
+              name: 'Global components',
+              color: 'red',
+            },
+            description: 'Create an empty milestones status',
+            images: [],
+            name: 'Empty milestones status',
+            shortDescription: '',
+            status: 'Pending',
+            tags: [],
+            updateDate: new Date('2023-09-21'),
+          },
+          {
+            category: {
+              name: 'Infrastructure',
+              color: 'red',
+            },
+            description: 'To ensure the easy use of the component the required types should be a few of them. Also use the import type directive to ensure a mayor documentation',
+            images: [],
+            name: 'Update types and required values',
+            shortDescription: 'To ensure the easy use of the component the required types should be a few of them',
+            status: 'Pending',
+            tags: [],
+            updateDate: new Date('2023-09-21'),
           },
         ],
         name: '0.7',
