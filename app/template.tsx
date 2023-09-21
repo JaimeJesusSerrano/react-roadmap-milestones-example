@@ -10,7 +10,7 @@ export default function Template({ children }: Props) {
   return (
     <>
       <HeaderBar />
-      <main className='h-[calc(100vh-2.5rem)] w-full'>{children}</main>
+      <main className="h-[calc(100vh-2.5rem)] w-full">{children}</main>
     </>
   )
 }
