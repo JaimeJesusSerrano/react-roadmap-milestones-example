@@ -1,6 +1,7 @@
 {
   "extends": [
     "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
@@ -24,6 +25,7 @@
   "plugins": [
     "react",
     "react-hooks",
+    "jsx-a11y",
     "prettier"
   ],
   "rules": {

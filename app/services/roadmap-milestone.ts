@@ -640,7 +640,8 @@ export const getExample = (): RoadmapMilestones => {
               name: 'Infrastructure',
               color: 'red',
             },
-            description: 'To ensure the easy use of the component the required types should be a few of them. Also use the import type directive to ensure a mayor documentation',
+            description:
+              'To ensure the easy use of the component the required types should be a few of them. Also use the import type directive to ensure a mayor documentation',
             images: [],
             name: 'Update types and required values',
             shortDescription: 'To ensure the easy use of the component the required types should be a few of them',
