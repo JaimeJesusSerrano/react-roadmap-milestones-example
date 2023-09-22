@@ -19,5 +19,14 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run build --if-present
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+    needs: build
+    steps:
       - run: npm run test:ci
       - run: echo "🍏 This job's status is ${{ job.status }}."
