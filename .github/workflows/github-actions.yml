@@ -19,6 +19,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
       - run: npm run build --if-present
+      - uses: actions/upload-artifact@master
+        with:
+          name: artifact
+          path: build/artifact
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
   test:
@@ -28,5 +32,12 @@ jobs:
         node-version: [18.x]
     needs: build
     steps:
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+      - uses: actions/checkout@master
+      - uses: actions/download-artifact@master
+        with:
+          name: artifact
+          path: build/artifact
       - run: npm run test:ci
       - run: echo "🍏 This job's status is ${{ job.status }}."
