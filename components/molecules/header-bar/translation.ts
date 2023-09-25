@@ -1,8 +1,8 @@
 const translations = {
-  'en-US': {
+  en: {
     title: 'React Roadmap Milestones Example',
   },
-  'es-ES': {
+  es: {
     title: 'React Roadmap Milestones Ejemplo',
   },
 }

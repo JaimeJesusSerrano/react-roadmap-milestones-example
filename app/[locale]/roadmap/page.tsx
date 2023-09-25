@@ -4,7 +4,7 @@ import React from 'react'
 
 import { ReactRoadmapMilestones } from '@jaimejesusserrano/react-roadmap-milestones'
 
-import { getExample } from '../services/roadmap-milestone'
+import { getExample } from '@/app/services/roadmap-milestone'
 
 const Roadmap = (): JSX.Element => {
   return (
