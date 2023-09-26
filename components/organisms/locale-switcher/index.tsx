@@ -1,19 +1,21 @@
 'use client'
 
-import { useLocale } from 'next-intl'
-import { usePathname, useRouter } from 'next-intl/client'
+import { usePathname, useRouter, useParams } from 'next/navigation'
 
 export default function LocaleSwitcher() {
-  const locale = useLocale()
   const pathname = usePathname()
   const router = useRouter()
+  const params = useParams()
+
+  const lang = params?.lang
 
   const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    router.push(pathname, { locale: e.target.value })
+    const newUrl = pathname.replace(`/${lang}/`, `/${e.target.value}/`)
+    router.push(newUrl)
   }
 
   return (
-    <select value={locale} onChange={handleChange}>
+    <select value={lang} onChange={handleChange}>
       <option value="en">English</option>
       <option value="es">Español</option>
     </select>

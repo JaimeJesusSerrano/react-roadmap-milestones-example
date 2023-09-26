@@ -6,7 +6,7 @@ interface Props {
   children: React.ReactNode
 }
 
-export default function Template({ children }: Props) {
+export default function Template({ children }: Props): JSX.Element {
   return (
     <>
       <HeaderBar />
