@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "0.4.2",
-    "@jaimejesusserrano/react-roadmap-milestones": "0.6.7",
+    "@jaimejesusserrano/react-roadmap-milestones": "0.6.8",
     "@reduxjs/toolkit": "1.9.7",
     "negotiator": "0.6.3",
     "next": "13.5.4",
