@@ -1,8 +1,10 @@
-export default {
-  'en-US': {
+const translations = {
+  en: {
     title: 'React Roadmap Milestones Example',
   },
-  'es-ES': {
+  es: {
     title: 'React Roadmap Milestones Ejemplo',
   },
 }
+
+export default translations

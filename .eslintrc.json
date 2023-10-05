@@ -1,7 +1,48 @@
 {
   "extends": [
     "next/core-web-vitals",
+    "plugin:tailwindcss/recommended",
     "plugin:@typescript-eslint/recommended",
-    "prettier" // Add "prettier" last. This will turn off eslint rules conflicting with prettier. This is not what will format our code.
-  ]
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true // // Allows for the parsing of JSX
+    },
+    "ecmaVersion": 2022, // Allows for the parsing of modern ECMAScript features
+    "project": "./tsconfig.json",
+    "sourceType": "module" // Allows for the use of imports
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "jsx-a11y",
+    "prettier"
+  ],
+  "rules": {
+    "no-empty-function": "off",
+    "no-param-reassign": "off",
+    "import/no-named-as-default": "off",
+    "import/prefer-default-export": "off",
+    "prettier/prettier": ["error", {
+      "endOfLine": "auto",
+      "arrowParens": "avoid",
+      "printWidth": 120,
+      "semi": false,
+      "singleQuote": true,
+      "trailingComma": "all"
+    }],
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/require-default-props": "off"
+  }
 }

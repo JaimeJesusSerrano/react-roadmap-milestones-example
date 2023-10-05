@@ -6,11 +6,11 @@ interface Props {
   children: React.ReactNode
 }
 
-export default function Template({ children }: Props) {
+export default function Template({ children }: Props): JSX.Element {
   return (
     <>
       <HeaderBar />
-      <main className='h-[calc(100vh-2.5rem)] w-full'>{children}</main>
+      <main className="h-[calc(100vh-2.5rem)] w-full">{children}</main>
     </>
   )
 }
