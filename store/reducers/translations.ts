@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit'
 
 const translationsSlice = createSlice({
   name: 'translations',
-  initialState: {},
+  initialState: null,
   reducers: {
     set(state, action) {
       return action.payload

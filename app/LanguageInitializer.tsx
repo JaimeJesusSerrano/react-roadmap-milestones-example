@@ -1,8 +1,9 @@
 'use client'
 
 import { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 
+import Spinner from '@/components/atoms/spinner'
 import { set } from '@/store/reducers/translations'
 
 interface Props {
@@ -13,13 +14,19 @@ interface Props {
 
 export default function LanguageInitializer({ children, translations }: Props): JSX.Element {
   const dispatch = useDispatch()
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const translationsState = useSelector((state: any) => state.translations)
 
   useEffect(() => {
     dispatch(set(translations))
   }, [dispatch, translations])
 
-  if (!translations) {
-    return <></>
+  if (!translations || !translationsState) {
+    return (
+      <div className="flex h-full items-center justify-center">
+        <Spinner className="h-12 w-12" />
+      </div>
+    )
   }
 
   return <>{children}</>
