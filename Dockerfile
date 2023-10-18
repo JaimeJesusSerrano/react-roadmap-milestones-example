@@ -1,20 +1,24 @@
-# Build Stage
-# docker build -t react-roadmap-milestones-example ./
-FROM node:18-alpine AS BUILD_IMAGE
-WORKDIR /app
-COPY package*.json ./
-RUN npm ci
-COPY . .
-RUN npm run build
+FROM node:18-alpine
 
-# Production Stage
-# docker run -p 3000:3000 react-roadmap-milestones-example
-FROM node:18-alpine AS PRODUCTION_STAGE
+# Create the directory on the node image 
+# where our Next.js app will live
+RUN mkdir -p /app
+
+# Set /app as the working directory
 WORKDIR /app
-COPY --from=BUILD_IMAGE /app/package*.json ./
-COPY --from=BUILD_IMAGE /app/.next ./.next
-COPY --from=BUILD_IMAGE /app/public ./public
-COPY --from=BUILD_IMAGE /app/node_modules ./node_modules
-ENV NODE_ENV=production
+
+# Copy package.json and package-lock.json
+# to the /app working directory
+COPY package*.json /app
+
+# Install dependencies in /app
+RUN npm ci
+
+# Copy the rest of our Next.js folder into /app
+COPY . /app
+
+# Ensure port 3000 is accessible to our system
 EXPOSE 3000
-CMD ["npm", "start"]
+
+# Run the application, as we would via the command line 
+CMD ["npm", "run", "dev"]
