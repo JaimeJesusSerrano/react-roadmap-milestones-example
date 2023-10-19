@@ -1,11 +1,13 @@
 version: "3.8"
 services:
-  app:
+  production-app:
     build:
       context: .
-      dockerfile: Dockerfile
-    container_name: app
+      dockerfile: Dockerfile.production
+    container_name: production-app
     restart: always
+    environment:
+      - NODE_ENV=production
     volumes:
       - ./:/app
       - /app/node_modules

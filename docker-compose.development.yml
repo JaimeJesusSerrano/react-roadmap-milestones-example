@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  development-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.development
+    container_name: development-app
+    restart: always
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 3000:3000

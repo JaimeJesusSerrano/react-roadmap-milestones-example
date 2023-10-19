@@ -16,13 +16,17 @@ Currently this project show us a fake data where the own evolution of this compo
 ## Future ideas to be developed (suggestions are accepted)
 - Overwrite styles, to allow config your own CSS.
 
-## How to start the project
+## How to start the project in development environment with hot reloading
 
 ### With docker
 Executing the next commands:
-- `docker-compose up`
+- `docker-compose -f docker-compose.development.yml up -d`
 
 ### Without docker
 Executing the next commands:
 - `npm ci` # To install dependencies
 - `npm run dev` # Previously described
+
+## How to start the project in production
+Executing the next commands:
+- `docker-compose -f docker-compose.production.yml up -d`
