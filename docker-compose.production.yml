@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  react-roadmap-milestones-production:
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    container_name: react-roadmap-milestones-production
+    restart: always
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 3000:3000
