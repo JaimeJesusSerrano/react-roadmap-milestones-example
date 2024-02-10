@@ -6,7 +6,10 @@ import LanguageInitializer from '../LanguageInitializer'
 import { getTranslations } from '../translations'
 import './../globals.css'
 
-const inter = Roboto({ subsets: ['latin'], weight: '300' })
+const roboto = Roboto({
+  weight: '300',
+  subsets: ['latin'],
+})
 
 export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'es' }]
@@ -28,7 +31,7 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html className="h-screen" lang={params.lang}>
-      <body className={`${inter.className} h-full w-full`}>
+      <body className={`${roboto.className} size-full`}>
         <ReduxProvider>
           <LanguageInitializer translations={translations}>{children}</LanguageInitializer>
         </ReduxProvider>
