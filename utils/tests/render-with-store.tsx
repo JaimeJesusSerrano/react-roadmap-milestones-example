@@ -20,7 +20,7 @@ export function renderWithStore(
     ...renderOptions
   } = {},
 ) {
-  function Wrapper({ children }: { children: JSX.Element }) {
+  function Wrapper({ children }: { children: React.ReactNode }) {
     return <Provider store={store}>{children}</Provider>
   }
 
