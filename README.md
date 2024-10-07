@@ -13,9 +13,6 @@ Several examples than can help us to understand it:
 
 Currently this project show us a fake data where the own evolution of this component in versions.
 
-## Future ideas to be developed (suggestions are accepted)
-- Overwrite styles, to allow config your own CSS.
-
 ## How to start the project in development environment with hot reloading
 
 ### With docker
