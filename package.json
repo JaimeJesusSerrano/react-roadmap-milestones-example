@@ -25,7 +25,7 @@
     "@emotion/react": "11.11.3",
     "@emotion/styled": "11.11.0",
     "@formatjs/intl-localematcher": "0.5.4",
-    "@jaimejesusserrano/react-roadmap-milestones": "0.6.12",
+    "@jaimejesusserrano/react-roadmap-milestones": "0.6.13",
     "@reduxjs/toolkit": "1.9.7",
     "negotiator": "0.6.3",
     "next": "14.1.0",
