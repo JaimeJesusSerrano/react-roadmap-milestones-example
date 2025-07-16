@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux'
 
 import LocaleSwitcher from '@/components/organisms/locale-switcher'
 
-export default function HeaderBar(): JSX.Element {
+export default function HeaderBar() {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const translations = useSelector((state: any) => state.translations)
 

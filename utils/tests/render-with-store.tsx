@@ -1,3 +1,5 @@
+import { type ReactNode } from 'react'
+
 import { configureStore } from '@reduxjs/toolkit'
 import { render } from '@testing-library/react'
 import { Provider } from 'react-redux'
@@ -7,12 +9,12 @@ import { reducers, RootState } from '@/store'
 const testStore = (state: Partial<RootState>) => {
   return configureStore({
     reducer: reducers,
-    preloadedState: state,
+    preloadedState: { translations: null, ...state },
   })
 }
 
 export function renderWithStore(
-  component: JSX.Element,
+  component: ReactNode,
   {
     initialState = {},
     // Automatically create a store instance if no store was passed in
