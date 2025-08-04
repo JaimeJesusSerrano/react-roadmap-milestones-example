@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 
 import ReduxProvider from '@/store/ReduxProvider'
+
 import LanguageInitializer from '../LanguageInitializer'
 import { getTranslations } from '../translations'
 import './../globals.css'
@@ -27,10 +28,11 @@ interface Props {
 }
 
 export default async function RootLayout({ children, params }: Props) {
-  const translations = await getTranslations(params.lang)
+  const resolvedParams = await params
+  const translations = await getTranslations(resolvedParams.lang)
 
   return (
-    <html className="h-screen" lang={params.lang}>
+    <html className="h-screen" lang={resolvedParams.lang}>
       <body className={`${roboto.className} size-full`}>
         <ReduxProvider>
           <LanguageInitializer translations={translations}>{children}</LanguageInitializer>
