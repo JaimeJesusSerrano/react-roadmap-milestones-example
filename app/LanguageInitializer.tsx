@@ -12,7 +12,7 @@ interface Props {
   translations: any
 }
 
-export default function LanguageInitializer({ children, translations }: Props): JSX.Element {
+export default function LanguageInitializer({ children, translations }: Props) {
   const dispatch = useDispatch()
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const translationsState = useSelector((state: any) => state.translations)
@@ -24,7 +24,7 @@ export default function LanguageInitializer({ children, translations }: Props): 
   if (!translations || !translationsState) {
     return (
       <div className="flex h-full items-center justify-center">
-        <Spinner className="h-12 w-12" />
+        <Spinner className="size-12" />
       </div>
     )
   }

@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter, useParams } from 'next/navigation'
 
-export default function LocaleSwitcher(): JSX.Element {
+export default function LocaleSwitcher() {
   const pathname = usePathname()
   const router = useRouter()
   const params = useParams()
