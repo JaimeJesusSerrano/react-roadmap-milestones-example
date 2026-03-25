@@ -23,12 +23,12 @@ export const metadata: Metadata = {
 
 interface Props {
   children: React.ReactNode
-  params: { lang: 'en' | 'es' }
+  params: Promise<{ lang: string }>
 }
 
 export default async function RootLayout({ children, params }: Props) {
   const resolvedParams = await params
-  const translations = await getTranslations(resolvedParams.lang)
+  const translations = await getTranslations(resolvedParams.lang as 'en' | 'es')
 
   return (
     <html className="h-screen" lang={resolvedParams.lang}>
