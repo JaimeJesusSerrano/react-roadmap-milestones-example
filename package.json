@@ -17,7 +17,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "test": "jest --watch",
     "test:ci": "jest --ci"
   },
@@ -30,10 +30,10 @@
     "@reduxjs/toolkit": "2.8.2",
     "lit": "3.3.2",
     "negotiator": "1.0.0",
-    "next": "15.4.10",
+    "next": "16.2.1",
     "next-intl": "4.8.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
     "react-redux": "9.2.0"
   },
   "devDependencies": {
@@ -43,8 +43,8 @@
     "@types/jest": "30.0.0",
     "@types/negotiator": "0.6.4",
     "@types/node": "24.10.3",
-    "@types/react": "18.3.27",
-    "@types/react-dom": "18.3.7",
+    "@types/react": "19.1.2",
+    "@types/react-dom": "19.1.2",
     "@typescript-eslint/eslint-plugin": "8.57.2",
     "@typescript-eslint/parser": "8.57.2",
     "autoprefixer": "10.4.27",
