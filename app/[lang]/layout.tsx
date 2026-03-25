@@ -23,8 +23,7 @@ export const metadata: Metadata = {
 
 interface Props {
   children: React.ReactNode
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  params: any
+  params: { lang: 'en' | 'es' }
 }
 
 export default async function RootLayout({ children, params }: Props) {
