@@ -13,7 +13,7 @@ function getLocale(request: NextRequest) {
   return match(languages, locales, defaultLocale)
 }
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl
   const pathnameHasLocale = locales.some(locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`)
@@ -40,6 +40,6 @@ export const config = {
      */
     '/((?!api|_next/static|_next/image|favicon.ico).*)',
     // Optional: only run on root (/) URL
-    // '/'
+    // '/'\
   ],
 }

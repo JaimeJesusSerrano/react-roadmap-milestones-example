@@ -1,7 +1,7 @@
-import { type IReactRoadmapMilestones } from '@jaimejesusserrano/react-roadmap-milestones'
+import { type IRoadmapMilestones } from '@jaimejesusserrano/roadmap-milestones'
 
-export const getExample = (): IReactRoadmapMilestones => {
-  const roadmapMilestones: IReactRoadmapMilestones = {
+export const getExample = (): IRoadmapMilestones => {
+  const roadmapMilestones: IRoadmapMilestones = {
     name: 'Roadmap Milestone',
     milestones: [
       {
