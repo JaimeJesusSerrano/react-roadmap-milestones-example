@@ -18,8 +18,8 @@ importers:
         specifier: 0.8.2
         version: 0.8.2
       '@jaimejesusserrano/roadmap-milestones':
-        specifier: 1.0.0
-        version: 1.0.0
+        specifier: 1.1.0
+        version: 1.1.0
       '@lit/react':
         specifier: 1.0.8
         version: 1.0.8(@types/react@19.1.2)
@@ -636,8 +636,8 @@ packages:
     resolution: {integrity: sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==}
     engines: {node: '>=8'}
 
-  '@jaimejesusserrano/roadmap-milestones@1.0.0':
-    resolution: {integrity: sha512-BnwwiWOq7glC8hdeFpDUN+/Yce3tXQGI8uTjyEPeGjU1zIvqVgO+OB89guODlDcNUKjWPh+4d+YwlggAXDmT5w==}
+  '@jaimejesusserrano/roadmap-milestones@1.1.0':
+    resolution: {integrity: sha512-kprSIwx0itnhEEpr0YOwuB4Coo3lSG3NrVFEWcRlQAlmh9fSzoaHpK3R9RJIq2ps4XVyU4oJSnxG9CGdDIQimw==}
     engines: {node: '>= 22.17.0', pnpm: '>=10.0.0'}
 
   '@jest/console@30.3.0':
@@ -4194,7 +4194,7 @@ snapshots:
 
   '@istanbuljs/schema@0.1.3': {}
 
-  '@jaimejesusserrano/roadmap-milestones@1.0.0':
+  '@jaimejesusserrano/roadmap-milestones@1.1.0':
     dependencies:
       lit: 3.3.2
 
